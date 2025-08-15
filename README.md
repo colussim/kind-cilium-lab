@@ -1,11 +1,11 @@
- ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)![Static Badge](https://img.shields.io/badge/KIND-V0.29.0-blue:)![Static Badge](https://img.shields.io/badge/Cilium-V1.18.0-blue:)
+ ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)![Kind](https://img.shields.io/badge/KIND-V0.29.0-blue:)![Cilium](https://img.shields.io/badge/Cilium-V1.18.0-blue:)
+
 
  # Kubernetes Test Platform with Kind and Cilium
  ![king-cilium.png](imgs/king-cilium.png)
 
-This repository provides a step-by-step guide to setting up a local Kubernetes test environment using [Kind](https://kind.sigs.k8s.io/) (Kubernetes in Docker) with [Cilium](https://cilium.io/) as the Container Network Interface (CNI).
+> This guide walks you through setting up a local Kubernetes cluster using [Kind](https://kind.sigs.k8s.io/) and [Cilium](https://cilium.io/) for advanced networking and observability.
 
-It is designed for developers, DevOps engineers, and platform engineers who want to experiment with Kubernetes networking, Cilium features, and service connectivity in a controlled local environment.
 
 ---
 
@@ -52,8 +52,8 @@ In summary, incorporating Cilium as your CNI brings significant performance and 
 
 ## 📋 Prerequisites
 
-- **nstalled Docker** (Engine) running locally ,**Podman** or nerdctl
-- **Installed kubectl** (is a command line tool that you use to communicate with the Kubernetes API server.)
+- Installed Docker (Engine), Podman, or nerdctl
+- Installed kubectl (command line tool for Kubernetes API)
 
 ---
 
