@@ -1,0 +1,2 @@
+kubectl create ns webtests
+kubectl -n webtests apply -f 05-test-ngix.yaml

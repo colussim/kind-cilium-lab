@@ -1,0 +1,33 @@
+kubeProxyReplacement: true 
+
+hostServices:
+  enabled: false
+externalIPs:
+  enabled: true
+nodePort:
+  enabled: true
+hostPort:
+  enabled: true
+image:
+  pullPolicy: IfNotPresent
+ipam:
+  mode: kubernetes
+hubble:
+  enabled: true
+  metrics:
+    enableOpenMetrics: true
+  relay:
+    enabled: true
+  ui:
+    enabled: true
+  peerService:
+    clusterDomain: k8sdemos2.local
+l2announcements:
+  enabled: true
+  leaseDuration: "3s"
+  leaseRenewDeadline: "1s"
+  leaseRetryPeriod: "500ms"
+
+cluster:
+  name: kind-k8sdemos2
+

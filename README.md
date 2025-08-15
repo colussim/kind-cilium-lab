@@ -466,7 +466,7 @@ namespace/webtests created
 We are going to create a YAML file that includes a deployment of NGINX and the creation of a LoadBalancer service that listens on port 80:
 
 ```yaml
-# 05-test-ngix.yaml:
+# 05-test-nginx.yaml:
 
 apiVersion: apps/v1
 kind: Deployment
@@ -510,7 +510,7 @@ spec:
 Deployment of our NGINX application with this command:
 
 ```bash
-:> kubectl -n webtests apply -f 05-test-ngix.yaml
+:> kubectl -n webtests apply -f 05-test-nginx.yaml
 deployment.apps/nginx created
 service/test-lb created
 :>
